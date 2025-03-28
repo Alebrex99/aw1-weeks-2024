@@ -10,3 +10,9 @@ var c = 2;
 
 console.log(a); // stampa
 
+if ("" === 0){
+    console.log("true");
+}
+else {
+    console.log("false");
+}

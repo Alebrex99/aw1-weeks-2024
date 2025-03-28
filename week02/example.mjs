@@ -7,4 +7,6 @@
 import dayjs from 'dayjs';
 
 let oggi = dayjs(); // oggi
+let now = new Date(); // oggi
+console.log(now);
 console.log(oggi.format('YYYY-MM-DD'));

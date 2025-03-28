@@ -12,6 +12,7 @@ console.log(movie);
 console.log(movie['title']);
 console.log(movie.title); // equivalente di riga 12
 
+
 movie.director = 'Cameron'; // aggiungo proprietà
 // movie['director'] = 'Cameron';
 delete movie.genre; // rimuovo proprietà
@@ -21,7 +22,7 @@ console.log(movie);
 movie['title'] // la proprietà che si chiama 'title'
 movie.title // idem come sopra
 const title = 'director'; // proprietà in variabile
-console.log(movie[title]);
+console.log("movie[title]: " + movie[title]);
 
 // stampo tutte le proprietà (nome e valore)
 for(const prop in movie) {
@@ -43,3 +44,11 @@ console.log(improvedMovie);
 console.log(titanic);
 
 const titanic2 = {... movie}; // come riga 29
+
+
+//PARTICOLARITA'
+let prop = 'prop';
+const obj = {[prop]: 'value'}; // prop è una variabile
+console.log(obj);
+
+[prop + 10]; // [2, 4, 6] 

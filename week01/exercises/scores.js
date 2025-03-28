@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 const scores = [20, -5, -1, 100, -3, 30, 50];
 const betterScores = [];
 let NN = 0;
@@ -21,6 +22,7 @@ minScore = Math.min(...betterScores);
 index = betterScores.indexOf(minScore);
 betterScores.splice(index, 1);
 */
+/*
 // VERSIONE CON SORT
 betterScores.sort((a,b) => a-b);
 betterScores.shift();
@@ -40,3 +42,9 @@ for(let i=0; i<NN+2; i++) {
 console.log(scores);
 console.log(betterScores);
 
+*/
+
+// MY VERSION
+const scores = [20, -5, -1, 100, -3, 30, 50];
+const betterScores = [];
+let NN = 0;
