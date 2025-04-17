@@ -125,6 +125,13 @@ async function main() {
   const newQuestionId = await ql.addQuestion(new Question(undefined, "Is 1 bigger than 10?", "luigi.derussis@polito.it", dayjs()));
   const newQuestion = await ql.getQuestion(newQuestionId);
   console.log(await newQuestion.getAnswers());
+
+  const answers = await Promise.all([ql.getQuestion(1), ql.getQuestion(2)]);
+  //answers.then((results => console.log(`answers: ${results}`)));
+  console.log(`answers: ${answers}`);
+
+
+  
 }
 
 main();

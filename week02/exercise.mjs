@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 
-function Answer(text, username, date, score=0) {
+//Costruttore di risposta
+function Answer(text, username, date, score=0) { //parametri posizionali; score ha un valore di default, ha senso solo se sta in fondo
   this.text = text;
   this.username = username;
   this.score = score;
@@ -37,6 +38,7 @@ function Question(text, username, date) {
   }
 
   this.listByDate = () => {
+    //noi vogliamo ordinare una copia senza perdere ordine originale
     return [...this.answers].sort((a,b) => (a.date.isAfter(b.date) ? 1 : -1));
   }
 
