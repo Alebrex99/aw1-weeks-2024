@@ -1,3 +1,4 @@
+//FETCH A SERVER QA SERVER
 const main = async() => {
   const response = await fetch('http://localhost:3001/api/questions');
   if(response.ok) {
